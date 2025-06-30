@@ -39,7 +39,7 @@ const ProjectList: React.FC = () => {
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
-            image={typeof project.image === 'string' ? project.image : URL.createObjectURL(project.image)} // Handle both string and File
+            image={typeof project.image === 'string' ? project.image : ""} 
             name={project.name}
             description={project.description}
           />
